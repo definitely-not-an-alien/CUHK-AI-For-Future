@@ -3,7 +3,6 @@ import explorer
 import writer
 import generator
 import home
-import nav_bar
 
 pg_list=["/home","/ex","/wr","/ge"]
 def main(page: ft.Page):
