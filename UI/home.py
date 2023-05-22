@@ -1,6 +1,5 @@
 import flet as ft
 import time
-import nav_bar
 def ret(page):
     title = "JyutOp"
     subtitle = "Your guide to Cantonese Opera"
