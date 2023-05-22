@@ -3,6 +3,7 @@ import explorer
 import writer
 import generator
 import home
+import nav_bar
 
 pg_list=["/home","/ex","/wr","/ge"]
 def main(page: ft.Page):
@@ -22,6 +23,9 @@ def main(page: ft.Page):
         ]
     )
     def resize(e):
+        screen.width = page.width
+        screen.height = page.height-50
+        screen.update()
         h_page.height = page.height-50
         h_page.width = page.width
         h_page.horizontal_alignment=ft.CrossAxisAlignment.CENTER
