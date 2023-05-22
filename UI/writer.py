@@ -1,6 +1,6 @@
 import flet as ft
 import openai
-openai.api_key = "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"
+openai.api_key = "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"
 messages = [{"role": "system", "content": "你是一個大型語言模型，具有寫很好的粵劇劇本歌詞的能力，可以寫很好的粵劇歌詞，以歌詞為對白，請使用繁體字以及文言文，亦必須要有對仗、音韻之美。"}]
 mb_def_style = ft.ButtonStyle(
     color={
@@ -147,6 +147,8 @@ def ret(page):
     )
     oa_page_cont=ft.Column(
             scroll=ft.ScrollMode.ALWAYS,
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.CENTER,
             spacing=20,
             controls=[
                 oa_sp,
