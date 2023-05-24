@@ -26,18 +26,6 @@ def ret(page):
         page.update()
         pass
     def sub_prompt(e):
-        __src = "1/" + str(random.randint(1, 4)) + "/" + str(random.randint(1, 5)) + ".png"
-        print(__src)
-        image_out=ft.Image(
-            src=__src
-        )
-        # image_out.image_src=f"/1/1/1.png"
-        image_out.update()
-        right_col.update()
-        gr.update()
-        gr2.update()
-        gpe.update()
-        page.update()
         pass
     cond_scale = ft.Slider(min=0, max=10, divisions=10, on_change=on_change_1)
     inf_scale = ft.Slider(value=18, min=0, max=24, divisions=24, on_change=on_change_1)
