@@ -9,5 +9,4 @@ Enter your OpenAI API key, and type in a brief description of your opera or spec
 Then, press the submit button to send the prompt through the API.
 A draft should be returned in around 20 seconds.
 ### Costume Generation (In development)
-Enter the prmopt in the text box and change the parameters using the slider.
-A more comprehensive and functioning model is included ina separate file (see [Mask Designer](Mask))
+Enter the prmopt in the text box and change the parameters using the slider. (NOTE: There are some connection issues with the server.)
