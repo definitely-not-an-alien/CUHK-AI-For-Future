@@ -107,6 +107,7 @@ def main(page: ft.Page):
     # nav_bar.ret(page)
     # page.on_route_change = route_change
     # page.add(ft.Text("Body!"))
+    page.theme_mode = "LIGHT"
     page.on_resize = resize
     page.add(screen)
     page.go("/home")

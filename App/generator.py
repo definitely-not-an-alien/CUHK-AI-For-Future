@@ -25,8 +25,24 @@ def ret(page):
         gpe.update()
         page.update()
         pass
+
+    def close_dlg(e):
+        dlg_modal.open = False
+        page.update()
+    dlg_modal = ft.AlertDialog(
+        modal=True,
+        title=ft.Text("Error"),
+        content=ft.Text("Connection to the server timed out (Error_code: 408)."),
+        actions=[
+            ft.TextButton("Ok", on_click=close_dlg),
+        ],
+        actions_alignment=ft.MainAxisAlignment.END,
+        on_dismiss=lambda e: print("Modal dialog dismissed!"),
+    )
     def sub_prompt(e):
-        pass
+        page.dialog = dlg_modal
+        dlg_modal.open = True
+        page.update()
     cond_scale = ft.Slider(min=0, max=10, divisions=10, on_change=on_change_1)
     inf_scale = ft.Slider(value=18, min=0, max=24, divisions=24, on_change=on_change_1)
     mask_rate = ft.Slider(value=0.32, min=0.10, max=0.70, divisions=30, on_change=on_change_1)
@@ -36,13 +52,13 @@ def ret(page):
         multiline=True,
         # read_only=True
     )
-    cond_num = ft.Text("Cond Scale: 0.0")
-    inf_num = ft.Text("Inf Scale: 18.0")
-    mask_num = ft.Text("Mask Rate: 0.32")
+    cond_num = ft.Text("Cond Scale: 0.0", color="#ffffff")
+    inf_num = ft.Text("Inf Scale: 18.0", color="#ffffff")
+    mask_num = ft.Text("Mask Rate: 0.32", color="#ffffff")
     left_col = ft.Column(
         spacing=10,
         controls=[
-            ft.Text("Prompt: "),
+            ft.Text("Prompt: ", color="#ffffff"),
             g_tb,
             cond_num,
             cond_scale,
@@ -65,7 +81,7 @@ def ret(page):
     )
     right_col = ft.Column(
         controls=[
-            ft.Text("Output: "),
+            ft.Text("Output: ", color="#ffffff"),
             image_out,
             g_b
         ]
