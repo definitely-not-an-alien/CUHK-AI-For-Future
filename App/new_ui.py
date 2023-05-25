@@ -101,7 +101,7 @@ def main(page: ft.Page):
         ],
         elevation=10,
         label_behavior="ONLY_SHOW_SELECTED",
-        bgcolor="#705080",
+        bgcolor="#b9e1f0",
         on_change=pg_change
     )
     # nav_bar.ret(page)

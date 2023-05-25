@@ -18,7 +18,7 @@ gp=ft.LinearGradient(
     begin=ft.alignment.top_center,
     end=ft.alignment.bottom_center,
     rotation=-45,
-    colors=[ft.colors.PURPLE, ft.colors.LIGHT_BLUE_700],
+    colors=[ft.colors.LIGHT_BLUE_700, ft.colors.BLUE_900],
 )
 def ret(page):
     def oe_search(e):
