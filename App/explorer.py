@@ -48,7 +48,11 @@ def ret(page):
             time.sleep(0.01)
         pass
     opera_database={
-        '帝女花':{'title': '帝女花', 'e_title': 'The Flower Princess', 'Synopsis': "The story unfolds as Princess Changping and Zhou Shixian are introduced to each other, participating in an arranged marriage.\nThey meet and get engaged with the blessing of their parents. Her father, the emperor, is overthrown by Li Zicheng. To save herself, the Princess hides as a nun in a monastery, but she happens to meet Zhou again. After being found by the new regime (the Qing dynasty), she follows Zhou's plan to eventually commit suicide. Zhou formulates a plan to make sure that her father is properly buried (without asking for a proper burial ceremony) while her little brother is released to safety. Zhou returns alone to negotiate with the new regime using the bargaining power vested in him by a written request from her. Once the new regime makes good on these promises, the couple return to her former home for a wedding ceremony. They take poison on their wedding night in the palace garden where they first meet."}, 
+        '帝女花':{
+            'title': '帝女花',
+            'e_title': 'The Flower Princess',
+            'Synopsis': "The story unfolds as Princess Changping and Zhou Shixian are introduced to each other, participating in an arranged marriage.\nThey meet and get engaged with the blessing of their parents. Her father, the emperor, is overthrown by Li Zicheng. To save herself, the Princess hides as a nun in a monastery, but she happens to meet Zhou again. After being found by the new regime (the Qing dynasty), she follows Zhou's plan to eventually commit suicide. Zhou formulates a plan to make sure that her father is properly buried (without asking for a proper burial ceremony) while her little brother is released to safety. Zhou returns alone to negotiate with the new regime using the bargaining power vested in him by a written request from her. Once the new regime makes good on these promises, the couple return to her former home for a wedding ceremony. They take poison on their wedding night in the palace garden where they first meet."
+        }, 
     }
     oe_title=ft.Text(
         "Opera Explorer\nExplore opera pieces",
